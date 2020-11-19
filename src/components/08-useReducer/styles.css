@@ -1,0 +1,7 @@
+body{
+    padding: 4rem;
+}
+
+.complete{
+    text-decoration: line-through;
+}
