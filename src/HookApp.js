@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const App = () => {
+const HookApp = () => {
 
     const [state,setState]=useState(1);
 
@@ -14,4 +14,4 @@ const App = () => {
      );
 }
  
-export default App;
+export default HookApp;

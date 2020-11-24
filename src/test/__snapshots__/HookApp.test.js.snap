@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`description HookApp component should create the snapshot 1`] = `
+<Fragment>
+  <h1>
+    Hola mundo 2
+  </h1>
+  <p>
+    1
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    aumenta
+  </button>
+</Fragment>
+`;
