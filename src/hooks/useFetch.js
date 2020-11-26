@@ -16,19 +16,24 @@ const useFecth = (url, loading) => {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        if (isMounted) {
+        if (isMounted.current) {
           setState({
             data,
             loading: false,
             error: null,
           });
         }
+      })
+      .catch(()=>{
+        setState({
+          data:null,
+          loading:false,
+          error:'404'
+        })
       });
   }, [url]);
 
-  return {
-    state,
-  };
+  return {state};
 };
 
 export default useFecth;

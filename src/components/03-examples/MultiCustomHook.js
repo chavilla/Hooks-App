@@ -3,11 +3,11 @@ import { useCounter } from "../../hooks/useCounter";
 import useFecth from "../../hooks/useFetch";
 
 const MultiCustomHook = () => {
-  const { state, increment } = useCounter();
+  const { counter, increment } = useCounter();
 
   const {
-    state: { data, loading },
-  } = useFecth(`https://www.breakingbadapi.com/api/quotes/${state}`, true);
+    data, loading 
+  } = useFecth(`https://www.breakingbadapi.com/api/quotes/${counter}`, true);
 
   // Condicional Importante
   const { author, quote } = !!data && data[0];
@@ -16,6 +16,7 @@ const MultiCustomHook = () => {
 
   return (
     <div>
+      <p className='counter'>{counter}</p>
       <h1>Breaking Quotes</h1>
       {loading ? (
         <div className="alert alert-info text-center">Loading...</div>

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MultiCustomHooks should to create a snapshot 1`] = `
+<div>
+  <p
+    className="counter"
+  >
+    10
+  </p>
+  <h1>
+    Breaking Quotes
+  </h1>
+  <div
+    className="alert alert-info text-center"
+  >
+    Loading...
+  </div>
+  <button
+    className="btn btn-primary"
+    onClick={[Function]}
+  >
+    Siguiente quote
+  </button>
+</div>
+`;
