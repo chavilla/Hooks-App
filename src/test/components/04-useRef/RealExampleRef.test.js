@@ -15,7 +15,7 @@ describe('RealExampleRef testing', () => {
 
     test('should to get a component', () => {
       
-        const btn=wrapper.find('.btn');
+      const btn=wrapper.find('.btn');
       btn.simulate('click');
       expect(wrapper.find('MultiCustomHook').exists()).toBe(true);
     

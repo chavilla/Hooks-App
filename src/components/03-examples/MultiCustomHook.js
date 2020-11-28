@@ -6,7 +6,7 @@ const MultiCustomHook = () => {
   const { counter, increment } = useCounter();
 
   const {
-    data, loading 
+    data, loading
   } = useFecth(`https://www.breakingbadapi.com/api/quotes/${counter}`, true);
 
   // Condicional Importante
@@ -21,11 +21,11 @@ const MultiCustomHook = () => {
       {loading ? (
         <div className="alert alert-info text-center">Loading...</div>
       ) : (
-        <blockquote className="blockquote text-right">
-          <p className="mb-0">{quote}</p>
-          <footer className="block">{author}</footer>
-        </blockquote>
-      )}
+          <blockquote className="blockquote text-right">
+            <p className="mb-0">{quote}</p>
+            <footer className="block">{author}</footer>
+          </blockquote>
+        )}
       <button className="btn btn-primary" onClick={increment}>
         Siguiente quote
       </button>

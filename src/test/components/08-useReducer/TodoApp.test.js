@@ -7,6 +7,7 @@ import { state } from "../../fixtures/toDoList";
 describe("<TodoApp />", () => {
   const wrapper = shallow(<TodoApp />);
 
+  //Llama al localstorage cada vez 
   Storage.prototype.setItem=jest.fn(()=>{});
 
   test("should be displayed correctly", () => {

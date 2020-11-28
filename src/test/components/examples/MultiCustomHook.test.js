@@ -28,7 +28,7 @@ describe('MultiCustomHooks', () => {
         expect(wrapper).toMatchSnapshot();
     });
 
-    test('should to show the info', () => {
+    test('should to display the info', () => {
 
         useFecth.mockReturnValue({
             data: [

@@ -8,8 +8,6 @@ describe("useFetch Testing", () => {
       useFecth(`https://www.breakingbadapi.com/api/quotes/1`, true)
     );
 
-
-
     const { data, loading,error }=result.current;
 
     expect(data).toBe(null);
