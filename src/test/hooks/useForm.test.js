@@ -25,6 +25,7 @@ describe('useForm testing', () => {
 
         const [,handleChange,]=result.current;
 
+        //Las funciones en los hooks usan act
         act(()=>{
             handleChange({
                target:{

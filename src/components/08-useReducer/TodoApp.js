@@ -41,7 +41,7 @@ const TodoApp = () => {
 
   return (
     <div>
-      <h1>TodosApp {todos.length} </h1>
+      <h1>TodosApp {todos.length}</h1>
       <hr />
       <div className="row">
         <div className="col-7  d-flex flex-column justify-content-center">

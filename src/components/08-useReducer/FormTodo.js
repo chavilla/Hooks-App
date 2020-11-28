@@ -9,6 +9,10 @@ const FormTodo = ({ handleAddTodo }) => {
 
     const handleSubmit = (e) => {
       e.preventDefault();
+
+      if (description.trim()==='') {
+        return;
+      }
   
       const newTodo = {
         id: new Date().getTime(),
