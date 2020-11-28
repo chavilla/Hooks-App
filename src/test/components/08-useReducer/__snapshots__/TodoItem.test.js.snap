@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoItem testing should  1`] = `
+<li
+  className="d-flex row my-2 w-100 align-items-center justify-content-around"
+>
+  <p
+    className=""
+    onClick={[Function]}
+  >
+    1
+    -
+  </p>
+  <button
+    className="btn btn-danger col-4"
+    onClick={[Function]}
+    type="button"
+  >
+    Borrar
+  </button>
+</li>
+`;
