@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoginScreen /> display the component 1`] = `
+<div
+  className="container"
+>
+  <p
+    className="d-block mt-5"
+  >
+    Login
+  </p>
+  <button
+    className="btn btn-primary"
+    onClick={[Function]}
+    type="button"
+  >
+    Agregar Usuario
+  </button>
+</div>
+`;

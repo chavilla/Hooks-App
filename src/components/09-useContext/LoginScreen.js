@@ -1,11 +1,10 @@
-import userEvent from '@testing-library/user-event';
 import React, { useContext } from 'react';
 import { UserContext } from './UserContext';
 
 const LoginScreen = () => {
 
     //Ontener referencia al context
-    const { setUser} = useContext(UserContext);
+    const { user,setUser} = useContext(UserContext);
     
     //objeto con id y name
     const newUser={
@@ -23,6 +22,7 @@ const LoginScreen = () => {
             >
                 Agregar Usuario
             </button>
+            { JSON.stringify(user) }
         </div>
      );
 }

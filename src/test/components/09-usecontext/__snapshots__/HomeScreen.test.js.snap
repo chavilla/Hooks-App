@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomeScreen /> display the component 1`] = `
+Array [
+  <div
+    className="container my-5"
+  >
+    <pre>
+      homescreen 
+      {
+   "user": {
+      "name": "Jesús",
+      "email": "jacv00@hotmail.com"
+   }
+}
+    </pre>
+  </div>,
+  ");",
+]
+`;
