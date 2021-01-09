@@ -6,16 +6,14 @@ import useFecth from '../../../hooks/useFetch';
 jest.mock('../../../hooks/useFetch');
 jest.mock('../../../hooks/useCounter');
 
-describe('MultiCustomHooks', () => {
+describe('MultiCustomHooks testing', () => {
 
-    
     beforeEach(()=>{
         useCounter.mockReturnValue({
             counter: 10,
-            increment: () => {}
+            //increment: () => {}
         });
     });
-
 
     test('should to create a snapshot', () => {
 
@@ -26,6 +24,7 @@ describe('MultiCustomHooks', () => {
         const wrapper=shallow(<MultiCustomHook />);
 
         expect(wrapper).toMatchSnapshot();
+        expect(wrapper.find('.alert').exists()).toBe(true);
     });
 
     test('should to display the info', () => {
@@ -40,8 +39,6 @@ describe('MultiCustomHooks', () => {
         });
 
         const wrapper=shallow(<MultiCustomHook />);
-
-        console.log(wrapper.find('.counter').text());
 
         expect(wrapper.find('.alert').exists()).toBe(false);
         expect(wrapper.find('.mb-0').text()).toBe('Hola a todos');

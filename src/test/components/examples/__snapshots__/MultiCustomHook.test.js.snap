@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MultiCustomHooks should to create a snapshot 1`] = `
+exports[`MultiCustomHooks testing should to create a snapshot 1`] = `
 <div>
   <p
     className="counter"
@@ -17,7 +17,6 @@ exports[`MultiCustomHooks should to create a snapshot 1`] = `
   </div>
   <button
     className="btn btn-primary"
-    onClick={[Function]}
   >
     Siguiente quote
   </button>
