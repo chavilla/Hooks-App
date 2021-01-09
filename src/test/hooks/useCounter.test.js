@@ -24,7 +24,7 @@ describe('useCounter Hook test', () => {
 
     test('should increment the counter', () => {
         const { result }=renderHook(()=> useCounter(100));
-        const { increment, decrement ,reset }=result.current;
+        const { decrement }=result.current;
         
         act(()=>{
             //increment();

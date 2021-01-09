@@ -13,6 +13,7 @@ describe("useForm testing", () => {
     const [value, ,] = result.current;
 
     expect(value).toEqual(initialState);
+
   });
 
   test("should to change the frame value (name)", () => {
@@ -30,10 +31,13 @@ describe("useForm testing", () => {
       });
     });
 
+    // get the value again
     const [value] = result.current;
-
     expect(value).toEqual({ ...initialState, name: "José" });
+    
   });
+
+  return;
 
   test("should to reset the form", () => {
     const { result } = renderHook(() => useForm(initialState));

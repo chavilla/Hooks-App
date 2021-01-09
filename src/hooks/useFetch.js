@@ -33,7 +33,7 @@ const useFecth = (url, loading) => {
       });
   }, [url]);
 
-  return {state};
+  return state;
 };
 
 export default useFecth;
